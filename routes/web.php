@@ -44,7 +44,7 @@ Route::get('/notification', function () {
     return view('layouts/partials/notification/replied_to_thread');
 })->name('notifications');
 
-Route::get('/blog','SummernoteController@index' );
+Route::get('/blog','SummernoteController@index' )->name('blog');
 Route::post('insert','SummernoteController@insert');
 Route::get('viewCode','SummernoteController@viewCode');
 Route::get('readInfo/{id}','SummernoteController@readInfo');
