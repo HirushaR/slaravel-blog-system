@@ -24,7 +24,7 @@
         </div>
         <div class="panel-body">
             <form action="{{url('updateInfo')}}" method="post">
-                @csrf
+               {{{csrf_field()}}}
                 <div class="form-group">
                     <label for="title">  Title</label>
                     <input type="hidden" name="id" value="{{$data->id}}">

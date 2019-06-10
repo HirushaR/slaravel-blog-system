@@ -46,7 +46,7 @@ Route::get('/notification', function () {
 
 Route::get('/blog','SummernoteController@index' )->name('blog');
 Route::post('insert','SummernoteController@insert');
-Route::get('viewCode','SummernoteController@viewCode');
+Route::get('blog/viewCode','SummernoteController@viewCode');
 Route::get('readInfo/{id}','SummernoteController@readInfo');
 Route::get('deleteInfo/{id}','SummernoteController@deleteInfo');
 Route::get('editInfo/{id}','SummernoteController@editInfo');

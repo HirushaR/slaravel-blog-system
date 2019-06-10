@@ -25,7 +25,7 @@
                 </div>
                 <div class="panel-body">
                     <form action="{{url('insert')}}" method="post">
-                        @csrf
+                        {{{csrf_field()}}}
                         <div class="form-group">
                             <label for="title">Title</label>
                             <input type="text" name="title" id="title" class="form-control">
@@ -38,6 +38,7 @@
                             <input type="button" name="clear" id="clear" class="btn btn-danger pull-right" value="Clear">
 
                         </div>
+
                     </form>
                 </div>
             </div>
